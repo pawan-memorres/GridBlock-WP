@@ -1,0 +1,48 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 2,
+  "name": "create-block/custom-grid",
+  "version": "0.1.0",
+  "title": "Custom Grid Block Plugin ",
+  "category": "common",
+  "attributes": {
+    "post_type": {
+      "type": "string",
+      "default": "posts"
+    },
+    "category_name": {
+      "type": "string",
+      "default": "Uncategorized"
+    },
+    "posts_per_page": {
+      "type": "number",
+      "default": 1
+    },
+    "layout": {
+      "type": "string",
+      "default": "Single"
+    },
+    "category_filter": {
+      "type": "string",
+      "default": "no"
+    },
+    "order": {
+      "type": "string",
+      "default": "ASC"
+    },
+    "taxonomy": {
+      "type": "string",
+      "default": "category"
+    }
+  },
+  "icon": "grid-view",
+  "description": "This blocks add an elegant way to show post types in grids, sliders, masonry and much more.",
+  "supports": {
+    "html": false
+  },
+  "textdomain": "custom-grid",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css",
+  "script": "file:./frontend.js"
+}
