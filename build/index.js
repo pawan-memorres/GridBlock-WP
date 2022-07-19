@@ -197,16 +197,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 class PostLayout extends React.Component {
-  // constructor(props){
-  //     super(props);
-  //     this.state = {
-  //         postLayoutSelection : "Single",
-  //       }
-  // };
-  componentDidMount() {}
-
   render() {
-    //const { postLayoutSelection } = this.state;
     const {
       layout
     } = this.props.attributes;
@@ -413,8 +404,6 @@ __webpack_require__.r(__webpack_exports__);
 
 
 class SortSelect extends React.Component {
-  componentDidMount() {}
-
   render() {
     const {
       order
@@ -686,7 +675,7 @@ function _extends() {
   \************************/
 /***/ ((module) => {
 
-module.exports = JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json","apiVersion":2,"name":"create-block/custom-grid","version":"0.1.0","title":"Custom Grid Block Plugin ","category":"common","attributes":{"post_type":{"type":"string","default":"posts"},"category_name":{"type":"string","default":"Uncategorized"},"posts_per_page":{"type":"number","default":1},"layout":{"type":"string","default":"Single"},"category_filter":{"type":"string","default":"no"},"order":{"type":"string","default":"ASC"},"taxonomy":{"type":"string","default":"category"}},"icon":"grid-view","description":"This blocks add an elegant way to show post types in grids, sliders, masonry and much more.","supports":{"html":false},"textdomain":"custom-grid","editorScript":"file:./index.js","editorStyle":"file:./index.css","style":"file:./style-index.css","script":"file:./frontend.js"}');
+module.exports = JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json","apiVersion":2,"name":"create-block/custom-grid","version":"0.1.0","title":"Custom Grid Block","category":"common","attributes":{"post_type":{"type":"string","default":"post"},"category_name":{"type":"string"},"posts_per_page":{"type":"number","default":1},"layout":{"type":"string","default":"Single"},"category_filter":{"type":"string","default":"no"},"order":{"type":"string","default":"asc"},"taxonomy":{"type":"string","default":"category"}},"icon":"grid-view","description":"This blocks add an elegant way to show post types in grids, sliders, masonry and much more.","supports":{"html":false},"textdomain":"custom-grid","editorScript":"file:./index.js","editorStyle":"file:./index.css","style":"file:./style-index.css","script":"file:./frontend.js"}');
 
 /***/ })
 

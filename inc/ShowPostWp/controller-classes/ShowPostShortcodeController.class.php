@@ -44,7 +44,7 @@ class ShowPostShortcodeController {
         // var_dump($queryArray["post_type"]);
 
         $jsonQueryArray = json_encode($queryArray);
-        // var_dump($jsonQueryArray);
+         var_dump($jsonQueryArray);
 
         $layoutView = new LayoutView($layout);
         if ($data->have_posts()):

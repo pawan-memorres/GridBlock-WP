@@ -3,16 +3,15 @@
 	"apiVersion": 2,
 	"name": "create-block/custom-grid",
 	"version": "0.1.0",
-	"title": "Custom Grid Block Plugin ",
+	"title": "Custom Grid Block",
 	"category": "common",
 	"attributes": {
 		"post_type": {
 			"type": "string",
-			"default": "posts"
+			"default": "post"
 		  },
 		  "category_name": {
-			"type":"string",
-			"default":"Uncategorized"
+			"type":"string"
 		  },
 		  "posts_per_page":
 		  { "type": "number",
@@ -28,7 +27,7 @@
 		  },
 		  "order":{
 			"type":"string",
-			"default": "ASC"
+			"default": "asc"
 		  },
 		  "taxonomy": {
 			"type":"string",

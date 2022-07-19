@@ -2,24 +2,9 @@ import { SelectControl, PanelBody} from '@wordpress/components';
 
 
 class PostLayout extends React.Component{
-    // constructor(props){
-    //     super(props);
-    //     this.state = {
-    //         postLayoutSelection : "Single",
-            
-    //       }
-
-    // };
-
-    componentDidMount() {
-     
-
-            
-    }
-
+   
     render(){
         
-        //const { postLayoutSelection } = this.state;
     const { layout } = this.props.attributes;
 
     const setPostLayout = (layout) => {

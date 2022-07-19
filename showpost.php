@@ -58,6 +58,7 @@ class GridBlock {
   
 	function renderCallback($attributes) {
 		ob_start();
+		//var_dump($attributes)
 		$gridInstance = new ShowPostShortcodeController();
 		$gridInstance->showPostShortcodeCallback($attributes);
 		return ob_get_clean();
